@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOFT HOME</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- Date Range picker -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="ham_bar">
+            <input class="menu-check" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span class="navicon"></span>
+            </label>
+        </div>
+        <div class="LOGO">
+            <a href="index.html">
+                <img src="images/icon/logo.png" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#" class="menu_active">ROOMS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#" class="booking_btn">BOOK NOW</a></li>
+            </ul>
+            <select name="" id="">
+                <option value="">EN</option>
+                <option value="">中文</option>
+                <option value="">한국어</option>
+            </select>
+        </nav>
+
+    </header>
+
+    <div class="room_datepicker">
+        <div class="room_datepicker_con">
+            <input type="date" id="check_in" placeholder="check in">
+            <input type="date" id="check_out" placeholder="check out">
+            <div class="room_adults">
+
+                <i class="fas fa-minus"></i>
+                <span>1</span>
+                <span class="">Adults</span>
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="room_kids">
+                <i class="fas fa-minus"></i>
+                <span>1</span>
+                <span class=""> Kids </span>
+                <i class="fas fa-plus"></i>
+            </div>
+            <a href="#" class="search_room_btn search_room_btn_rp">SEARCH</a>
+        </div>
+    </div>
+
+    <main class="done_main">
+        <h1>Almost Done!</h1>
+        <p>
+            您將預訂的房型為 <span>Single Room</span>
+        </p>
+        <p>
+            請填寫以下資料，即可完成訂房
+        </p>
+        <div class="cu_info">
+            <div class="">
+                <label for="cu_name">*真實姓名</label>
+                <input type="text" id="cu_name">
+            </div>
+            <div class="">
+                <label for="cu_check_in">*Check In</label>
+                <input type="date" id="cu_check_in" placeholder="check in">
+            </div>
+
+            <div class="">
+                <label for="cu_phone_num">*手機號碼</label>
+                <input type="tel" id="cu_phone_num">
+            </div>
+            <div class="">
+                <label for="cu_check_out">*Check Out</label>
+                <input type="date" id="cu_check_out" placeholder="check out">
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footer_box">
+
+            <div class="f_l">
+                <div class="footer_logo">
+                    <a href="index.html">
+                        <img src="images/icon/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="images/icon/facebook.svg" alt=""></a>
+                    <a href="#"><img src="images/icon/instagram.svg" alt=""></a>
+                    <a href="#"><img src="images/icon/tripadvisor.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="f_m">
+                <p>台北市中山區長春路777號3樓</p>
+                <p>Mail : lofthome@mail.com</p>
+                <p>Tel : +886 2777-7777</p>
+            </div>
+            <div class="f_r">
+                <p>Copy right &copy; Loft Home</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOFT HOME</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- Date Range picker -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="ham_bar">
+            <input class="menu-check" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn">
+                <span class="navicon"></span>
+            </label>
+        </div>
+        <div class="LOGO">
+            <a href="index.html">
+                <img src="images/icon/logo.png" alt="index">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="rooms.html">ROOMS</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#" class="booking_btn">BOOK NOW</a></li>
+            </ul>
+            <select name="" id="">
+                <option value="">EN</option>
+                <option value="">中文</option>
+                <option value="">한국어</option>
+            </select>
+        </nav>
+
+    </header>
+    <div class="banner">
+        <div class="book_input">
+            <label for="check_in">Check In</label>
+            <input type="date" id="check_in">
+
+            <label for="check_out">Check Out</label>
+            <input type="date" id="check_out">
+
+
+            <div class="living_population">
+                <div class="adults">
+                    <div class="">Adults</div>
+                    <i class="fas fa-minus"></i>
+                    <span>1</span>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="kids">
+                    <div class=""> Kids </div>
+                    <i class="fas fa-minus"></i>
+                    <span>1</span>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </div>
+
+            <a href="#" class="search_room_btn">SEARCH</a>
+
+
+        </div>
+
+        <div class="swiper-container swiper-container1">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="images/banner-1.png" alt="hotel">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/banner-2.jpg" alt="hotel">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/banner-3.jpg" alt="hotel">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/banner-4.jpg" alt="hotel">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/banner-5.jpg" alt="hotel">
+                </div>
+
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"> </div>
+        </div>
+        <div class="scroll">
+            scroll
+            <br>
+            <img src="images/icon/down-arrow.svg" alt="">
+        </div>
+    </div>
+    <h1 class="index_h1">Room Type</h1>
+    <div class="room_type">
+
+        <div class="room_box room_box1">
+            <a href="#">
+                <div class="cover">
+                    <p>Single Room</p>
+                    <div class="little_line"></div>
+                </div>
+            </a>
+        </div>
+        <div class="room_box room_box2">
+            <a href="#">
+                <div class="cover">
+                    <p>Deluxe Single Room</p>
+                    <div class="little_line"></div>
+                </div>
+            </a>
+        </div>
+        <div class="room_box room_box3">
+            <a href="#">
+                <div class="cover">
+                    <p>Double Room</p>
+                    <div class="little_line"></div>
+                </div>
+            </a>
+        </div>
+        <div class="room_box room_box4">
+            <a href="#">
+                <div class="cover">
+                    <p>Deluxe Double Room</p>
+                    <div class="little_line"></div>
+                </div>
+            </a>
+        </div>
+        <div class="room_box room_box5">
+            <a href="#">
+                <div class="cover">
+                    <p>Twin Room</p>
+                    <div class="little_line"></div>
+                </div>
+            </a>
+        </div>
+        <div class="room_box room_box6">
+            <a href="#">
+                <div class="cover">
+                    <p>Deluxe Twin Room</p>
+                    <div class="little_line"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_box">
+
+            <div class="f_l">
+                <div class="footer_logo">
+                    <a href="index.html">
+                        <img src="images/icon/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="sns">
+                    <a href="#"><img src="images/icon/facebook.svg" alt=""></a>
+                    <a href="#"><img src="images/icon/instagram.svg" alt=""></a>
+                    <a href="#"><img src="images/icon/tripadvisor.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="f_m">
+                <p>台北市中山區長春路777號3樓</p>
+                <p>Mail : lofthome@mail.com</p>
+                <p>Tel : +886 2777-7777</p>
+            </div>
+            <div class="f_r">
+                <p>Copy right &copy; Loft Home</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="swiper-4.5.0/dist/js/swiper.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

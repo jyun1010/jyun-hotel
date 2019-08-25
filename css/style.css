@@ -1,0 +1,631 @@
+body, html {
+    background-color: #fff;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', 'Lato', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ham_bar {
+    display: none;
+}
+
+.LOGO {
+    width: 8%;
+    margin: 10px 0 10px 25px;
+}
+
+.LOGO a {
+    display: block;
+    width: 100%;
+}
+
+.LOGO img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+nav .booking_btn {
+    border: 1px solid #000;
+}
+
+.menu a:hover {
+    color: #D1C8C3;
+    border: 1px solid #000;
+}
+
+nav .menu_active {
+    color: #D1C8C3;
+}
+
+nav select {
+    border: 1px solid #000;
+    margin: 0 20px;
+    background-color: #fff;
+    padding: 5px;
+    height: 35px;
+}
+
+@media screen and (max-width:960px) {}
+
+.banner {
+    position: relative;
+}
+
+.swiper-container1 {
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev {
+    /* 箭頭換色 %23後 */
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l4.2%2C4.2L8.4%2C22l17.8%2C17.8L22%2C44L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L5%2C44l-4.2-4.2L18.6%2C22L0.8%2C4.2L5%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 15px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.book_input {
+    position: absolute;
+    width: 13%;
+    top: 0;
+    left: 10%;
+    z-index: 3;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.719);
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+[type="date"] {
+    background: #fff url("../images/icon/calendar.svg") 97% 50% no-repeat;
+}
+
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.book_input label {
+    display: block;
+}
+
+.book_input input, .room_datepicker input {
+    border: none;
+    background-color: #fff;
+    padding: 8px 5px;
+}
+
+.living_population {
+    display: flex;
+}
+
+.adults, .kids {
+    width: 50%;
+}
+
+.adults span, .kids span, .room_adults span, .room_kspands span {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.adults i, .kids i, .room_adults i, .room_kids i {
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search_room_btn {
+    width: 40%;
+    font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 25px auto 0;
+    transition: 0.5s;
+}
+
+.search_room_btn:hover {
+    background-color: rgba(139, 139, 139, 0.432);
+}
+
+.scroll {
+    position: absolute;
+    color: #fff;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    z-index: 3;
+    text-align: center;
+}
+
+.index_h1 {
+    font-size: 2rem;
+    width: 80%;
+    margin: 25px auto;
+}
+
+.room_type {
+    width: 80%;
+    margin: 0 auto 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.room_box {
+    width: 32%;
+    height: 300px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+
+.room_box a {
+    display: block;
+}
+
+.room_box1 {
+    background-image: url("../images/photo-1551776235-dde6d482980b@2x.png");
+}
+
+.room_box2 {
+    background-image: url("../images/photo-1528908929486-dfaa209c6986\ \(1\)@2x.png");
+}
+
+.room_box3 {
+    background-image: url("../images/photo-1501127122-f385ca6ddd9d@2x.png");
+}
+
+.room_box4 {
+    background-image: url("../images/photo-1519974719765-e6559eac2575@2x.png");
+}
+
+.room_box5 {
+    background-image: url("../images/photo-1501876725168-00c445821c9e@2x.png");
+}
+
+.room_box6 {
+    background-image: url("../images/photo-1552902019-a6dddd56544a@2x.png");
+}
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.753);
+    opacity: 0.5;
+    transition: 0.5s;
+    color: #000;
+}
+
+.cover:hover {
+    background-color: rgba(149, 149, 149, 0.692);
+    opacity: 1;
+    color: #fff;
+}
+
+.cover p {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    font-size: 1.5rem;
+}
+
+.little_line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+
+footer {
+    background-color: #F8F1EA;
+}
+
+.footer_box {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sns {
+    margin: 10px auto;
+}
+
+.sns a {
+    margin: 0 10px 0 0;
+}
+
+.f_m {
+    line-height: 2;
+}
+
+.f_r {
+    color: #aaa;
+}
+
+/* -----------------room頁------------------------ */
+
+.room_datepicker {
+    background-color: #D1C8C3;
+    padding: 25px 30px;
+}
+
+.room_datepicker_con {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.room_datepicker_con input {
+    margin: 0 15px;
+    width: 18%;
+}
+
+.room_adults, .room_kids {
+    margin: 0 10px;
+    font-size: 0;
+}
+
+.room_adults span, .room_kids span {
+    background-color: #fff;
+    margin: 0;
+    font-size: 1rem;
+    padding: 10px 15px;
+}
+
+.room_kids span {
+    padding: 6px 15px;
+}
+
+.room_adults i, .room_kids i {
+    font-size: 1rem;
+}
+
+.search_room_btn_rp {
+    padding: 8px;
+    width: 10%;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.room_info_box {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.room_pic {
+    width: 30%;
+    position: relative;
+}
+
+.room_pic a {
+    display: block;
+}
+
+.room_pic img {
+    width: 100%;
+}
+
+.info_d {
+    width: 40%;
+    margin-left: 30px;
+}
+
+.info_d h2 {
+    font-size: 1.5rem;
+    line-height: 2;
+    font-weight: bolder;
+}
+
+.info_p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info_p p {
+    width: 45%;
+    font-size: 1rem;
+    line-height: 2;
+    margin: 5px 0;
+}
+
+.info_pic {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info_pic img {
+    width: 15%;
+    margin: 5px;
+}
+
+.info_price {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info_price h2 {
+    font-size: 1rem;
+    vertical-align: middle;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.info_price span {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 30px;
+}
+
+.two_btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.two_btn a {
+    width: 20%;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 0 0px 0 15px;
+}
+
+.more_btn:hover, .book_now_btn:hover {
+    color: #000;
+    background-color: #eee;
+}
+
+.book_now_btn {
+    color: #fff;
+    background-color: #000;
+}
+
+.lb_cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(71, 71, 71, 0.541);
+    display: none;
+}
+
+.lb_info {
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    margin: 30px auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    display: none;
+}
+
+.lb_up {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.lb_up img {
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.lb_room_title {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 2rem;
+}
+
+.close_lb_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.close_lb_btn a {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.close_lb_btn a img {
+    max-width: none;
+    width: 100%;
+    height: 100%;
+}
+
+.lb_up_price {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 2;
+}
+
+.lb_up_price span {
+    font-size: 2rem;
+    margin: 0 0 0 15px;
+}
+
+.lb_pic_control {
+    background-color: #F8F1EA;
+    padding: 20px;
+}
+
+.lb_pic_control img {
+    max-width: 10%;
+    margin: 0 15px;
+}
+
+.lb_intor {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.lb_l {
+    width: 50%;
+}
+
+.lb_l h2 {
+    font-size: 1.5rem;
+    margin: 30px 0;
+    font-weight: bolder;
+}
+
+.lb_room_info_pic {
+    display: flex;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.lb_room_info_pic img {
+    margin: 0 10px 0;
+}
+
+.lb_room_info_pic figcaption {
+    margin: 10px 0;
+}
+
+.lb_info_p {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.lb_info_p h2 {
+    font-size: 1.5rem;
+    margin: 30px 0;
+    font-weight: bolder;
+}
+
+.lb_info_p p {
+    font-size: 1.2rem;
+    margin: 30px 0;
+    line-height: 2;
+}
+
+.lb_info_p_data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.lb_info_p_data p {
+    width: 25%;
+    margin: 20px 0;
+}
+
+/* ------------------確認訂購頁------------------------ */
+
+.done_main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.done_main h1 {
+    font-size: 1.5rem;
+    margin: 30px 0;
+    font-weight: bolder;
+}
+
+.done_main p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cu_info{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cu_info div{
+    width: 35%;
+    margin: 20px auto;
+}
